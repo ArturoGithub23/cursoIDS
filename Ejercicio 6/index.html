@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Genere una página que despliegue un video y audio con diferentes origenes (formatos mp4, webm, ogg).</h1>
+            <ol>
+                <li>
+                    <h2>Etiquetas video/source. Dejar en autoplay.</h2>
+                    <h3>-Pueden usar Handbrake o Media Converter para los diferentes formatos de video.</h3>
+                </li>
+                <li>
+                    <h2>Restricción</h2>
+                    <h3>-Solo una etiqueta de video</h3>
+                </li>
+            </ol>
+        </hgroup>
+    </header>
+    <section>
+        <h2>Videos en HTML5</h2>
+        <figure>
+            <video autoplay muted>
+                <source src="video/mp4/mov_bbb.mp4">
+                <source src="video/ogg/mov_bbb.ogg">
+            </video>
+            <figcaption>Esto es un video desplegado en HTML5</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>GIF en HTML5</h2>
+        <figure>
+            <img src="video/gif/watchtrailer.gif" alt="gif">
+            <figcaption>Esto es un gif desplegado en HTML5</figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>Audios en HTML5</h2>
+        <figure>
+            <audio controls>
+                <source src="audio/audio.opus">
+            </audio>
+            <figcaption>Esto es un audio desplegado en HTML5</figcaption>
+        </figure>
+    </section>
+</body>
+</html>
