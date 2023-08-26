@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <form>
+        <section>
+            <p>Datalist</p>
+            <fieldset>
+                <label for="inputLista">Lista de colores:</label>
+                <input list="listacolores" name="inputLista">
+                <datalist id="listacolores">
+                    <option value="azul">
+                    <option value="Rojo">
+                    <option value="Amarillo">
+                    <option value="Negro">
+                    <option value="Blanco">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Url input</p>
+            <fieldset>
+                <label for="url">Lista urls:</label>
+                <input type="url" name="url" id="url"
+                    placeholder="https://example.com"
+                    pattern="https://.*" size="30"
+                    list="listaurls"
+                    required
+                >
+                <datalist id="listaurls">
+                    <option value="https://www.google.com" label="by google">
+                    <option value="https://wwww.msn.com" label="by ms">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Range</p>
+            <fieldset>
+                <label for="range">Rangos:</label>
+                <input type="range" list="listanums" step="1" name="range" max="6" min="0">
+                <datalist id="listanums">
+                    <option value="0" label="cero">
+                    <option value="1" label="uno">
+                    <option value="2" label="dos">
+                    <option value="3" label="tres">
+                    <option value="4" label="cuatro">
+                    <option value="5" label="cinco">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Number input</p>
+            <fieldset>
+                <label for="numeros">Lista números:</label>
+                <input type="number" list="listanumeros" min="1" name="numeros">
+                <datalist id="listanumeros">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Tel input</p>
+            <fieldset>
+                <label for="telefonos">Lista teléfonos:</label>
+                <input type="tel" list="listatelefonos" name="telefonos">
+                <datalist id="listatelefonos">
+                    <option value="5510203050">
+                    <option value="5610203050">
+                    <option value="5710203040">
+                    <option value="5810203040">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Email input</p>
+            <fieldset>
+                <label for="email">Lista emails</label>
+                <input type="email" list="listaemails">
+                <datalist id="listaemails">
+                    <option value="correo@correo.com">
+                    <option value="correo1@correo.com">
+                    <option value="correo2@correo.com">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Color input</p>
+            <fieldset>
+                <label for="colores">Lista colores:</label>
+                <input type="color" list="listacolores" name="colores">
+                <datalist id="listacolores">
+                    <option value="#000000">
+                    <option value="#0000FF">
+                    <option value="#008000">
+                    <option value="#808080">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>Search input</p>
+            <fieldset>
+                <label for="buscar">Buscar:</label>
+                <input type="search" placeholder="Buscar elemento">
+                <input type="submit" value="Buscar">
+            </fieldset>
+        </section>
+        <section>
+            <p>Date input</p>
+            <fieldset>
+                <label for="date">Listado de fechas:</label>
+                <input type="date" list="listadofechas" name="date">
+                <datalist id="listadofechas">
+                    <option value="1900-01-10">
+                    <option value="2000-01-10">
+                    <option value="2020-01-10">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>DateTime input</p>
+            <fieldset>
+                <label for="datetime">Listado DateTime:</label>
+                <input type="datetime" name="datetime" list="listadodatetime">
+                <datalist id="listadodatetime">
+                    <option value="2000-01-01T10:00:00">
+                    <option value="2010-01-01T10:00:00">
+                    <option value="2020-01-01T10:00:00">
+                </datalist>
+            </fieldset>
+        </section>
+        <section>
+            <p>DataTime-local input</p>
+            <fieldset>
+                <label for="dt-local">DateTime-local</label>
+                <input type="datetime-local" name="dt-local">
+            </fieldset>
+        </section>
+        <section>
+            <p>Month input</p>
+            <fieldset>
+                <label for="month">Mes</label>
+                <input type="month" name="month">
+            </fieldset>
+        </section>
+        <br>
+        <input type="submit" name="btn_enviar" value="Enviar">
+        <input type="reset" name="btn_limpiar" value="Limpiar">
+    </form>
+</body>
+</html>
