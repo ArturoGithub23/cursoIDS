@@ -49,5 +49,84 @@
             <input type="radio" name="promocion" value="Descuento 5%"><label>Descuento 5%</label><br>
         </fieldset>
     </section>
+    <br><br>
+    <section>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Análisis de ventas anuales
+        </p>
+        <table id="tabla" border data-num_anios="4" data-num_productos="4" data-nombre_productos="['Producto A', 'Producto B', 'Producto C', 'Producto D']" data-titulo_tabla="Análisis de ventas anuales">
+            <thead>
+                <tr>
+                    <th rowspan="2">Año</th>
+                    <th colspan="4">Expansión de ventas</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;Producto A&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;Producto B&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;Producto C&nbsp;&nbsp;</td>
+                    <td>&nbsp;&nbsp;Producto D&nbsp;&nbsp;</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>&nbsp;&nbsp;N-3&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;-</td>
+                    <td>&nbsp;&nbsp;-</td>
+                    <td>&nbsp;&nbsp;-</td>
+                    <td>&nbsp;&nbsp;-</td>
+                </tr>
+                <tr>
+                    <th>&nbsp;&nbsp;N-2&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;3</td>
+                    <td>&nbsp;&nbsp;5</td>
+                    <td>&nbsp;&nbsp;8</td>
+                    <td>&nbsp;&nbsp;4</td>                    
+                </tr>
+                <tr>
+                    <th>&nbsp;&nbsp;N-1&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;4</td>
+                    <td>&nbsp;&nbsp;4</td>
+                    <td>&nbsp;&nbsp;7</td>
+                    <td>&nbsp;&nbsp;3</td>
+                </tr>
+                <tr>
+                    <th>&nbsp;&nbsp;N&nbsp;&nbsp;</th>
+                    <td>&nbsp;&nbsp;5</td>
+                    <td>&nbsp;&nbsp;7</td>
+                    <td>&nbsp;&nbsp;6</td>
+                    <td>&nbsp;&nbsp;2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th rowspan="2">Año</th>
+                    <th colspan="4">Expansión de ventas</th>
+                </tr>
+                <tr>
+                    <td>Producto A</td>
+                    <td>Producto B</td>
+                    <td>Producto C</td>
+                    <td>Producto D</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <script>
+        let anios = document.getElementById('tabla').dataset.num_anios;
+        let numProductos = document.getElementById('tabla').dataset.num_productos;
+        let productos = document.getElementById('tabla').dataset.nombre_productos;
+        let tituloTabla = document.getElementById('tabla').dataset.titulo_tabla;
+
+        console.log('-Número de años-');
+        console.log(anios);
+        console.log('-Número de productos mostrados-');
+        console.log(numProductos);
+        console.log('-Productos-');
+        console.log(productos);
+        console.log('-Título de tabla-');
+        console.log(tituloTabla);
+    </script>
 </body>
 </html>
