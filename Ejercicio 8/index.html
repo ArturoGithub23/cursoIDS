@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <header>
+        <hgroup>
+            <h1>Ejercicio 08</h1>
+        </hgroup>
+    </header>
+    <section>
+        <form>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre">
+                <br><br>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" min="0">
+                <br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Cultura general</legend>
+                <br>
+                <label for="capital">Capital de Noruega:</label>
+                <input type="radio" name="capital" value="Copenhague"><label>Copenhague</label>
+                <input type="radio" name="capital" value="Helsinki"><label>Helsinki</label>
+                <input type="radio" name="capital" value="Oslo"><Label>Oslo</Label>
+                <br><br>
+                <label for="fecha">Fecha de la revolución francesa:</label>
+                <input type="radio" name="fecha" value="1492"><label>1492</label>
+                <input type="radio" name="fecha" value="1789"><label>1789</label>
+                <input type="radio" name="fecha" value="1917"><label>1917</label>
+                <br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </form>
+    </section>
+    <section>
+        <header>
+            <hgroup>
+                <h2>HTML5 number input</h2>
+            </hgroup>
+        </header>
+        <h4><u>Ejemplo 1</u></h4>
+        <form>
+            <label for="ejemplo1_edad">Introduce tu edad:</label>
+            <input type="number" name="ejemplo1_edad">
+            <input type="submit" value="Enviar">
+        </form>
+        <br><br>
+        <h4><u>Ejemplo 2</u></h4>
+        <form>
+            <label for="ejemplo2_edad">Introduce tu edad (min=18 max=99, campo obligatorio)</label>
+            <input type="number" min="18" max="99" required style="width: 120px;">
+            <input type="submit" value="Enviar">
+        </form>
+        <br><br>
+        <h4><u>Ejemplo 3</u></h4>
+        <form>
+            <label for="ejemplo3_edad">Introduce tu edad (min=18 max=99, campo obligatorio)</label>
+            <input type="number" min="18" max="99" required style="width: 120px;">
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+    <br>
+    <section>
+        <h3>Utilizar etiqueta dialog</h3>
+        <fieldset>
+            <p onclick="this.style.color='red'">Este parrafo con onclick...</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p ondblclick="this.style.color='red'">Este parrafo con ondblclick...</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p onmouseup="this.style.color='red'">Este parrafo con onmouseup...</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p onmousedown="this.style.color='red'">Este parrafo con onmousedown...</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p onmousemove="this.style.color='red'">Este parrafo con onmousemove...</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p onmouseover="this.style.color='red'">Este parrafo con onmouseover...</p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <p onmouseout="this.style.color='red'">Este parrafo con onmouseout...</p>
+        </fieldset>
+    </section>
+</body>
+</html>
