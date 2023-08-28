@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo</title>
+</head>
+<body>
+    <section>
+        <img id="miImagen" src="../Ejercicio 3/img/logo-cursosdedesarrollo.png" alt="texto alt"
+            data-camara="Modelo de la cámara que utilice"
+            data-efecto="Efectos aplicados a esta foto"
+            data-geo="Longitud y latitud"
+            data-fecha="La fecha en que se tomò la foto"
+        >
+    </section>
+
+
+    <script type="text/javascript">
+        var imgsConEfecto = document.querySelectorAll('img[data-efecto]');
+        var camara = document.getElementById('miImagen').dataset.camara;
+
+        var elemento = document.getElementById('miImagen');
+        var cam = elemento.dataset.camara;// Modelo de la cámara que utilicè
+
+        var attribute = elemento.getAttribute("data-geo");
+        elemento.setAttribute("data.geo", "someName");
+
+        console.log('atributos data');
+        console.log(camara);
+        console.log("###################")
+        console.log(elemento);
+        console.log(cam);
+        console.log(attribute);
+        console.log(imgsConEfecto);
+    </script>
+</body>
+</html>
