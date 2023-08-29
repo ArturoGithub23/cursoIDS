@@ -1,0 +1,19 @@
+div {
+    border: 1px dotted gray;
+}
+
+#formato_1 {
+    border-radius: 25px;
+}
+
+#formato_2 {
+    border-radius: 25% 25%;
+}
+
+#formato_3 {
+    border-radius: 50px 25px 10px;
+}
+
+#formato_4 {
+    border-radius: 25px 0 15px 50px;
+}
