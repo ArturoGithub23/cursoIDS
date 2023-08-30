@@ -2,18 +2,22 @@ div {
     border: 1px dotted gray;
 }
 
+/* 1 parámetro. aplica el tamaño de radio e1 a todas las esquinas */
 #formato_1 {
     border-radius: 25px;
 }
 
+/* 2 parámetros. e1 sup-izq e inf-dcha. e2 sup-dcha e inf-izq */
 #formato_2 {
     border-radius: 25% 25%;
 }
 
+/* 3 parámetros. E1 sub-izq, e2 sup-dcha e inf-izq, e3. Inf-dcha */
 #formato_3 {
     border-radius: 50px 25px 10px;
 }
 
+/* 4 parámetros orden de las agujas del reloj e1 superior-izquierda */
 #formato_4 {
     border-radius: 25px 0 15px 50px;
 }
