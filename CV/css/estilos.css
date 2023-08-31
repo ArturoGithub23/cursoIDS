@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 0 20%;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  background-color: darkgrey;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  justify-content: space-evenly;
+}
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+aside {
+  min-width: 250px;
+  background-color: rgb(212, 211, 211);
+}
+
+.contenedor-lista {
+  padding: 15px 20px;
+}
+
+aside h3 {
+  padding: 5px;
+  background-color: rgb(62, 62, 62);
+  color: white;
+}
+
+main {
+  display: flex;
+}
+
+.contenedor-principal {
+  padding: 0 5px;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
