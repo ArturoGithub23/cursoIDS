@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.tabla {
+  border: thick solid black;
+}
+
+th,
+td {
+  padding: 4px 2px 0;
+  border: thin solid black;
+  text-align: center;
+}
+
+th:not(.total) {
+  background-color: powderblue;
+  min-width: 100px;
+}
+
+tbody tr td:last-child {
+  text-align: right;
+}
+
+.total {
+  background-color: rgb(162, 222, 100);
+  text-align: right;
+  font-weight: bold;
+}
+
+tr td:nth-child(1) {
+  background-color: rgb(249, 241, 124);
+  font-weight: bold;
+}
