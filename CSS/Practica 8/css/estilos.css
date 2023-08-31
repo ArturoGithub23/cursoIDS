@@ -1,0 +1,106 @@
+@charset "UTF-8";
+a {
+  font-size: 20px;
+  color: black;
+}
+a:nth-of-type(2n) {
+  font-size: medium;
+}
+a:nth-of-type(2n + 1) {
+  font-size: x-large;
+}
+a:link {
+  color: green;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+input:focus {
+  background-color: aquamarine;
+  text-decoration: underline;
+}
+input:checked {
+  height: 60px;
+  width: 60px;
+}
+input:checked + span {
+  color: red;
+}
+input:read-only {
+  background-color: lightgray;
+}
+input:required {
+  border-color: red;
+}
+.myText4:optional {
+  background-color: lightgreen;
+}
+.valid1:valid {
+  border-color: green;
+}
+.valid1:invalid {
+  border-color: red;
+}
+.rang {
+  margin-bottom: 10px;
+}
+.rang:in-range {
+  border-color: green;
+}
+.rang:out-of-range {
+  border-color: red;
+}
+strong:nth-of-type(1n) {
+  color: yellow;
+}
+strong:nth-last-of-type(1) {
+  text-transform: uppercase;
+}
+span:first-of-type {
+  color: blueviolet;
+  text-decoration: underline;
+}
+span:last-of-type {
+  color: tomato;
+}
+body section article span:nth-of-type(2) {
+  color: steelblue;
+  font-size: xx-large;
+}
+.before-after p::after,
+.before-after p::before {
+  content: "Esto es un pseudoelemento";
+  display: block;
+  background-color: red;
+}
+.hijo::before {
+  content: "Esto es un pseudoelemento before antes del div class hijo";
+  display: block;
+  background-color: cadetblue;
+}
+.hijo::after {
+  content: "Esto es un pseudoelemento before después del div class hijo";
+  display: block;
+  background-color: aquamarine;
+}
+.pseudoelemento2 p::selection {
+  color: red;
+  background-color: yellow;
+}
+.pseudoelemento2 p::first-letter {
+  background-color: red;
+  font-style: oblique;
+  font-size: larger;
+  margin-right: 20px;
+  text-decoration: line-through;
+}
+.pseudoelemento3 p::first-line {
+  color: crimson;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
