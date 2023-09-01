@@ -1,0 +1,12 @@
+@media (orientation: landscape) {
+  body {
+    background-image: url(../../../Imagenes/logo-cursosdedesarrollo.png);
+  }
+}
+
+@media (orientation: portrait) {
+  body {
+    background-image: url(../../../videos/watchtrailer.gif);
+    background-repeat: no-repeat;
+  }
+}
