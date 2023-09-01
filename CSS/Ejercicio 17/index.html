@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Ejercicio 17</title>
+  </head>
+  <body>
+    <section class="fondo">
+      <section class="contenedor">
+        <aside class="aside">
+          <section class="info-contacto">
+            <h2>Información de contacto</h2>
+            <p>info.contact@gmail.com</p>
+            <p>+1(585) 902-8665</p>
+          </section>
+        </aside>
+        <main class="main">
+          <section class="mensaje">
+            <h3>Envía un mensaje</h3>
+            <form class="formulario">
+              <label for="nombre">Nombres *</label>
+              <input type="text" name="nombre" required />
+              <label for="telefono">Teléfono / Celular</label>
+              <input
+                type="tel"
+                name="telefono"
+                maxlength="10"
+                pattern="[0-9]+"
+                minlength="10"
+              />
+              <label for="correo">Correo electrónico*</label>
+              <input type="email" name="correo" required />
+              <label for="mensaje">Mensaje *</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="3"
+                required
+              ></textarea>
+              <input class="btn" type="submit" value="Enviar Mensaje" />
+            </form>
+          </section>
+        </main>
+      </section>
+    </section>
+  </body>
+</html>
