@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 33</title>
+    <script>
+      let fila, resultado;
+      let columna = parseInt(prompt("introduce el tamaño: ", "0"));
+
+      for (fila = 1; fila <= columna; fila++) {
+        for (espacios = columna - fila; espacios > 0; espacios--) {
+          document.write("&nbsp&nbsp");
+        }
+        for (conta = 1; conta < 2 * fila; conta++) {
+          document.write("*");
+        }
+        document.writeln("<br>");
+      }
+
+      for (fila = columna - 1; fila > 0; fila--) {
+        for (espacios = columna - fila; espacios > 0; espacios--) {
+          document.write("&nbsp&nbsp");
+        }
+        for (conta = fila * 2; conta > 1; conta--) {
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

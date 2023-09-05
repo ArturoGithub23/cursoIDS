@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+  </head>
+  <body>
+    <div id="resultado"></div>
+    <script>
+      let dato, dato2, num1, num2, resultado;
+      dato = window.prompt("Introduce el primer número", "0");
+      num1 = parseInt(dato);
+      dato2 = window.prompt("Introduce el segundo número", "0");
+      num2 = parseInt(dato2);
+
+      resultado = num1 - num2;
+      document.getElementById(
+        "resultado"
+      ).innerHTML = `El resultado de la resta de los números es = ${resultado}`;
+    </script>
+  </body>
+</html>

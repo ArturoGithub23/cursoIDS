@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 26</title>
+  </head>
+  <body>
+    <script>
+      let resultado;
+      let multipli = function (x, y) {
+        return x * y;
+      };
+      let expon = function (x, y) {
+        return Math.pow(x, y);
+      };
+      let suma = (x, y) => {
+        return x + y;
+      };
+
+      let resta = (x, y) => {
+        return x - y;
+      };
+
+      resultado = suma(15, 8);
+      alert("Suma " + resultado);
+
+      resultado = multipli(15, 8);
+      alert("Multiplicación " + resultado);
+
+      resultado = expon(10, 2);
+      alert("Potencia " + resultado);
+
+      resultado = resta(47, 18);
+      alert("Resta " + resultado);
+    </script>
+  </body>
+</html>

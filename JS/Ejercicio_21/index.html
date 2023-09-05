@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 21</title>
+    <script>
+      let mes, respuesta;
+      let meses = new Array();
+      meses["1"] = "31";
+      meses["2"] = "28";
+      meses["3"] = "31";
+      meses["4"] = "30";
+      meses["5"] = "31";
+      meses["6"] = "30";
+      meses["7"] = "31";
+      meses["8"] = "31";
+      meses["9"] = "30";
+      meses["10"] = "31";
+      meses["11"] = "30";
+      meses["12"] = "31";
+
+      mes = prompt(
+        "Indique el mes (en número) para conocer el total de días?",
+        "0"
+      );
+
+      if (isNaN(mes)) {
+        respuesta = "<p> Ingrese el número del mes </p>";
+      } else {
+        respuesta = `<p> El mes ${mes} tiene ${meses[mes]} días </p>`;
+      }
+
+      document.write(respuesta);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 30</title>
+    <script>
+      function Calcula() {
+        let numero = document.fdatos.entrada.value;
+        let dato = document.getElementById("lista");
+        let valor = dato.options[lista.selectedIndex].value;
+        let resultado = numero * valor;
+        document.getElementById("salida").innerHTML = resultado;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="fdatos">
+      Introduce número: <input type="text" size="10" name="entrada" />
+      <b>X</b>
+      <select id="lista" onchange="Calcula()">
+        <option value="1" selected>uno</option>
+        <option value="2">dos</option>
+        <option value="3">tres</option>
+        <option value="4">cuatro</option>
+      </select>
+    </form>
+    <div id="salida"></div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 29</title>
+    <script>
+      function Programa() {
+        let x = 3;
+        function func(randomize) {
+          if (randomize) {
+            let x = parseInt(Math.random() * 10);
+            return x;
+          }
+          return x;
+        }
+        document.getElementById("salida").innerHTML = func(false); //3
+        document.getElementById("salida").innerHTML += func(1);
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Alcance de variables (scope)</h3>
+    <input type="button" value="Pulsa aquí" onclick="Programa()" />
+    <div id="salida"></div>
+  </body>
+</html>

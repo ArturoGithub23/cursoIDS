@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 15</title>
+    <script>
+      let nota1, nota2, nota3;
+      let dato1, dato2, dato3, media;
+      dato1 = window.prompt("Primer número?", "0");
+      nota1 = parseInt(dato1);
+      console.log(nota1);
+      dato2 = window.prompt("Segundo numero", "0");
+      nota2 = parseInt(dato2);
+      console.log(nota2);
+      dato3 = window.prompt("Tercer número?", "");
+      nota3 = parseInt(dato3);
+      console.log(nota3);
+
+      media = (nota1 + nota2 + nota3) / 3;
+      if (media <= 5) {
+        resultado = "Suspendido";
+      } else {
+        resultado = "Aprobado";
+      }
+      document.write(`<h3>La nota final es ${resultado}</h3>`);
+    </script>
+  </head>
+  <body></body>
+</html>

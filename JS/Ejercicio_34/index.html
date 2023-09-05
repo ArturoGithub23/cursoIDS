@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <script>
+      function Sumar() {
+        let num1, num2, res;
+        num1 = parseInt(document.calculadora.valor1.value);
+        num2 = parseInt(document.calculadora.valor2.value);
+        res = num1 + num2;
+        document.calculadora.resultado.value = res;
+      }
+
+      function Restar() {
+        let num1, num2, resultado;
+        num1 = parseInt(document.calculadora.valor1.value);
+        num2 = parseInt(document.calculadora.valor2.value);
+        resultado = num1 - num2;
+        document.calculadora.resultado.value = resultado;
+      }
+
+      function Multiplicar() {
+        let num1, num2, resultado;
+        num1 = parseInt(document.calculadora.valor1.value);
+        num2 = parseInt(document.calculadora.valor2.value);
+        resultado = num1 * num2;
+        document.calculadora.resultado.value = resultado;
+      }
+
+      function Dividir() {
+        let num1, num2, resultado;
+        num1 = parseInt(document.calculadora.valor1.value);
+        num2 = parseInt(document.calculadora.valor2.value);
+        resultado = num1 / num2;
+        document.calculadora.resultado.value = resultado;
+      }
+    </script>
+  </head>
+  <body>
+    <form name="calculadora">
+      <label for="valor1">Primer número</label>
+      <input type="number" name="valor1" />
+      <br />
+      <label for="valor2">Segundo número</label>
+      <input type="number" name="valor2" />
+      <br />
+      <input type="button" name="button1" value="Sumar" onclick="Sumar()" />
+      <input type="button" name="button2" value="Restar" onclick="Restar()" />
+      <input
+        type="button"
+        name="button3"
+        value="Multiplicar"
+        onclick="Multiplicar()"
+      />
+      <input type="button" name="button4" value="Dividir" onclick="Dividir()" />
+      <input type="text" readonly name="resultado" />
+    </form>
+  </body>
+</html>

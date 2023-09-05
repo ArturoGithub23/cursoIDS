@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 13</title>
+  </head>
+  <body>
+    <div id="insertar"></div>
+    <script>
+      let dato, num;
+      const div = document.getElementById("insertar");
+      do {
+        dato = window.prompt("Introduce un número del 1 al 10");
+        num = parseInt(dato);
+        let parrafo = document.createElement("p");
+        let valor = document.createTextNode(num);
+        parrafo.appendChild(valor);
+        div.appendChild(parrafo);
+        console.log(num);
+      } while (num !== 7);
+    </script>
+  </body>
+</html>

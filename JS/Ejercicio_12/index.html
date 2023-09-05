@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 12</title>
+  </head>
+  <body>
+    <p id="resta"></p>
+    <p id="multiplicacion"></p>
+
+    <script>
+      let dato, num1, num2, resultadoRes, resultadoMult;
+      dato = window.prompt("Introduce el primer número");
+      num1 = parseInt(dato);
+      dato = window.prompt("Introduce el segundo número");
+      num2 = parseInt(dato);
+      resultadoRes = num1 - num2;
+      resuldadoMult = num1 * num2;
+
+      document.getElementById(
+        "resta"
+      ).innerHTML = `El resultado de la resta es = ${resultadoRes}`;
+      document.getElementById(
+        "multiplicacion"
+      ).innerHTML = `El resultado de la multiplicación es = ${resuldadoMult}`;
+    </script>
+  </body>
+</html>
