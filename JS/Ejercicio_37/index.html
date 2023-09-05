@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modules - CommonJS</title>
+    <script>
+      function ficha() {
+        let alumno = {
+          nombre: "Gerardo",
+          edad: 18,
+        };
+        this.verNombre = function () {
+          return alumno.nombre;
+        };
+        this.verEdad = function () {
+          var resultado = alumno.edad;
+          return resultado;
+        };
+      }
+      function programa() {
+        let obj = new ficha();
+        document.write(`El nombre es ${obj.verNombre()} <br>`);
+        document.write(`La edad es ${obj.verEdad()} <br>`);
+      }
+    </script>
+  </head>
+  <body>
+    <h3>Clase ficha</h3>
+    <input type="button" value="Pulsa aquí" onclick="programa()" />
+  </body>
+</html>
