@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js"></script>
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contador de palabras y vocales </h1>
+    </header>
+    <section class="contenido">
+      <form name="formulario" class="formulario">
+        <fieldset>
+          <legend>Ingresa una palabra</legend>
+          <input
+            type="text"
+            name="palabra"
+            placeholder="Ingresar palabrea NO numeros"
+          />
+          <input
+            type="text"
+            readonly
+            name="resultadoVocales"
+            placeholder="Resultado total vocales"
+          />
+          <input
+            type="button"
+            value="Contar vocales"
+            class="btn"
+            onclick="contarVocales()"
+          />
+          <input
+            type="text"
+            readonly
+            name="resultadoPalabras"
+            placeholder="Resultado total palabras"
+          />
+          <input
+            type="button"
+            value="Contar palabras"
+            class="btn"
+            onclick="contarPalabras()"
+          />
+        </fieldset>
+      </form>
+      <a class="btn" href="index.html">Contador de vocales</a>
+    </section>
+  </body>
+</html>
+</html>
