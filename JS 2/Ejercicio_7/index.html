@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <title>Ejercicio área y perímetro</title>
+    <script src="js/javascript.js"></script>
+    <script src="js/programa.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Calcular área y perímetro</h1>
+    </header>
+    <main>
+      <section class="seccion">
+        <p>Seleccionar una figura</p>
+        <div class="triangulo btn" onclick="formTriangulo()"></div>
+        <div class="cuadrado btn" onclick="formCuadrado()"></div>
+        <div class="rectangulo btn" onclick="formRectangulo()"></div>
+      </section>
+      <section id="calc-triangulo" class="seccion oculto">
+        <p>Figura seleccionada: Triángulo</p>
+        <form class="form" name="triangulo">
+          <label for="base">Base:</label>
+          <input
+            type="number"
+            name="base"
+            placeholder="Colocar la base"
+            step="0.0000"
+            min="0"
+          />
+          <label for="altura">Altura:</label>
+          <input
+            type="number"
+            name="altura"
+            placeholder="Colocar la altura"
+            step="0.000"
+            min="0"
+          />
+          <label for="ladoA">Lado A:</label>
+          <input
+            type="number"
+            name="ladoA"
+            step="0.0000"
+            min="0"
+            placeholder="Colocar la medida de lado A"
+          />
+          <label for="ladoB">Lado B</label>
+          <input
+            type="number"
+            name="ladoB"
+            step="0.0000"
+            min="0"
+            placeholder="Colocar la medida de lado B"
+          />
+          <hr />
+          <input
+            type="text"
+            readonly
+            name="resultadoArea"
+            placeholder="Redultado Área"
+          />
+          <input
+            type="text"
+            readonly
+            name="resultadoPerimetro"
+            placeholder="Redultado Perímetro"
+          />
+          <section class="botones">
+            <input
+              class="btn submit"
+              type="button"
+              value="Calcular"
+              onclick="calculoTriangulo()"
+            />
+            <input class="btn submit" type="reset" value="Borrar medidas" />
+          </section>
+        </form>
+      </section>
+      <section id="calc-cuadrado" class="seccion oculto">
+        <p>Figura seleccionada: Cuadrado</p>
+        <form class="form" name="cuadrado">
+          <label for="base">Base:</label>
+          <input
+            type="number"
+            name="base"
+            placeholder="Colocar la base"
+            step="0.0000"
+            min="0"
+          />
+          <hr />
+          <input
+            type="text"
+            readonly
+            name="resultadoArea"
+            placeholder="Redultado Área"
+          />
+          <input
+            type="text"
+            readonly
+            name="resultadoPerimetro"
+            placeholder="Redultado Perímetro"
+          />
+          <section class="botones">
+            <input
+              class="btn submit"
+              type="button"
+              value="Calcular"
+              onclick="calculoCuadrado()"
+            />
+            <input class="btn submit" type="reset" value="Borrar medidas" />
+          </section>
+        </form>
+      </section>
+      <section id="calc-rectangulo" class="seccion oculto">
+        <p>Figura seleccionada: Rectángulo</p>
+        <form class="form" name="rectangulo">
+          <label for="base">Base:</label>
+          <input
+            type="number"
+            name="base"
+            placeholder="Colocar la base"
+            step="0.0000"
+            min="0"
+          />
+          <label for="altura">Altura:</label>
+          <input
+            type="number"
+            name="altura"
+            placeholder="Colocar la altura"
+            step="0.000"
+            min="0"
+          />
+          <hr />
+          <input
+            type="text"
+            readonly
+            name="resultadoArea"
+            placeholder="Redultado Área"
+          />
+          <input
+            type="text"
+            readonly
+            name="resultadoPerimetro"
+            placeholder="Redultado Perímetro"
+          />
+          <section class="botones">
+            <input
+              class="btn submit"
+              type="button"
+              value="Calcular"
+              onclick="calculoRectangulo()"
+            />
+            <input class="btn submit" type="reset" value="Borrar medidas" />
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

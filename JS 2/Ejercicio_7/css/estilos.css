@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  width: 100vw;
+}
+
+p {
+  margin: 0;
+  font-weight: bold;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+main {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccion {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.seccion p {
+  width: 100%;
+  text-align: center;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.triangulo {
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid green;
+  border-left: 50px solid transparent;
+}
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+.rectangulo {
+  width: 150px;
+  height: 100px;
+  background-color: red;
+}
+.oculto {
+  display: none;
+}
+
+.form {
+  width: 80%;
+  align-content: center;
+}
+
+input,
+label {
+  display: block;
+  width: 50%;
+  margin: 0.5rem auto;
+}
+.botones {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.submit {
+  width: 25%;
+  margin: 5px 0 0 0;
+  background-color: blue;
+  border-radius: 5px;
+  border-color: aquamarine;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.invalid:invalid {
+  border-color: red;
+}

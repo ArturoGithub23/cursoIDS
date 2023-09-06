@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <script>
+      class Animal {
+        constructor(nombre) {
+          this.nombre = nombre;
+          this.edad = 0;
+        }
+        get edad() {
+          return this._edad;
+        }
+        set edad(value) {
+          if (value < 0) {
+            alert("Eso no es posible");
+          }
+          this._edad = value;
+        }
+        verNombre() {
+          console.log("Yo soy " + this.nombre);
+        }
+      }
+
+      var objVivo = new Animal("Hormiga");
+      objVivo.verNombre();
+      objVivo.edad = 5;
+      console.log(objVivo.edad);
+    </script>
+  </head>
+  <body></body>
+</html>
