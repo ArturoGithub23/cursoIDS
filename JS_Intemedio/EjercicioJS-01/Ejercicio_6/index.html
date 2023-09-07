@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <script>
+      function alerta() {
+        var a = document.formulario.entrada.value;
+        //a === 1 ? alert("Hey, it is 1!") : alert("Weird, what could it be");
+
+        if (a === 1) {
+          alert("Hey, it is 1");
+        } else {
+          alert("Weird, what could it be?");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="formulario">
+      <label for="entrada">Ingresa un número</label>
+      <input type="number" name="entrada" min="0" />
+      <input type="button" value="Enviar" onclick="alerta()" />
+    </form>
+  </body>
+</html>

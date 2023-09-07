@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="ejercicio.js"></script>
+    <style>
+      form {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        text-align: left;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="formulario">
+      <input
+        type="button"
+        value="para John"
+        name="1"
+        onclick="prueba(this.name)"
+      />
+      <input
+        type="button"
+        value="para Jane"
+        name="2"
+        onclick="prueba(this.name)"
+      /><input
+        type="button"
+        value="para John Jacob"
+        name="3"
+        onclick="prueba(this.name)"
+      />
+      <input type="text" readonly name="resultado" />
+    </form>
+  </body>
+</html>
