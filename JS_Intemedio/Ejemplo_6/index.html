@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="ejemplo.js"></script>
+    <script>
+      function procesaEvento(elemento, e) {
+        console.log("Evento click");
+        console.log(elemento);
+        console.log(e);
+      }
+    </script>
+    <title>Eventos HTML</title>
+  </head>
+  <body onload="cargar()">
+    <div id="div_principal">
+      <p>Un parrafo</p>
+    </div>
+    <div>
+      <img src="" alt="texto" />
+      <p>Has hecho clic a la imagen <span id="num">0</span> veces.</p>
+    </div>
+  </body>
+</html>

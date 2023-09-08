@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/ejemplo.js"></script>
+
+    <title>Ejemplo DOM 2</title>
+    <style>
+      body {
+        font-size: small;
+      }
+      .oculto {
+        display: none;
+      }
+      .main .data {
+        background-color: blue;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body id="page">
+    <!--
+    <header id="header">
+      <p>primer parrafo</p>
+      <section class="section"></section>
+      <h1>Titular</h1>
+      <p>Parrago de header</p>
+      <a href="#">Enlaces</a>
+    </header>
+
+    Antes de main
+    <main id="main" class="main">
+      <p>Parrafo en main</p>
+      
+      <section>
+        <div class="info">
+          <h3>div con class info</h3>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h3>Body</h3>
+        <p id="body"></p>
+        <hr />
+        <h3>NodeName</h3>
+        <p id="nodeName"></p>
+        <hr />
+        <h3>TextContent</h3>
+        <p id="textContent"></p>
+        <hr />
+        <h3>InnerHtml</h3>
+        <p id="innerHtml"></p>
+        <hr />
+        <h3>OuterHtml</h3>
+        <p id="outerHtml"></p>
+      </section>
+      <section class="info">
+        <div>
+          <form class="oculto">
+            <input type="text" name="nickname" />
+            <input type="text" name="nickname" />
+            <input type="text" name="nickname" />
+          </form>
+        </div>
+      </section>
+    </main>-->
+
+    <!--Elementos HTML-->
+    <p>Eventos HTML</p>
+    <button onclick="this.innerHTML=Date()">La fecha es ?</button>
+
+    <p onclick="javascript:alert('mensaje');">Parrafo</p>
+    <div>
+      <img src="" alt="imagen" onclick="alert('¡Has hecho clic!')" />
+    </div>
+
+    <button id="idBoton" title="Click !!">Click aquí...</button>
+    <script>
+      function muestraMensaje() {
+        console.log("Gracias por el 'Click ");
+      }
+      document.getElementById("idBoton").onclick = muestraMensaje;
+    </script>
+  </body>
+</html>
